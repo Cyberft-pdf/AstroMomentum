@@ -18,3 +18,17 @@ OBJ_SIZE = 5
 VEL_SCALE = 100
 
 BG = pygame.image.load("background.png")
+PLANET = pygame.transform(pygame.image.load("planet.png"), (PLANET_SIZE * 2, PLANET_SIZE *2))
+
+
+WHITE = (255, 255, 255)
+RED = (255, 0, 0)
+BLUE = (0, 0, 255)
+
+
+
+
+
+
+
+
