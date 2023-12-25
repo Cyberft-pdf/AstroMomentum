@@ -17,8 +17,8 @@ PLANET_SIZE = 50
 OBJ_SIZE = 5
 VEL_SCALE = 100
 
-BG = pygame.image.load("background.png")
-PLANET = pygame.transform(pygame.image.load("planet.png"), (PLANET_SIZE * 2, PLANET_SIZE *2))
+BG = pygame.transform.scale(pygame.image.load("background.png"),(WIDTH, HEIGHT))
+PLANET = pygame.transform.scale(pygame.image.load("planet.png"), (PLANET_SIZE * 2, PLANET_SIZE *2))
 
 
 WHITE = (255, 255, 255)
@@ -28,7 +28,25 @@ BLUE = (0, 0, 255)
 
 
 
+def main():
+    running = True
+    #clock = obnovovcí frekfence simulace, kdybych neupravila tak se to bude obnovovat podle hardwaru
+    clock = pygame.time.Clock()
 
+    while running:
+        clock.tick(FPS)
+        for event in pygame.event.get():    
+            if event.type == pygame.QUIT:
+                running = False
+        win.blit(BG, (0, 0))
+        pygame.display.update()
+
+    pygame.quit()
+
+
+
+if __name__ == "__main__":
+    main()
 
 
 
