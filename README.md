@@ -4,7 +4,7 @@ The program allows users to launch spacecraft from a designated position with th
 <h1>Key Features:</h1>
 <ul>
   <li>Gravity simulation with a central planet and spacecraft affected by gravitational force</li>
-  <li>User-controlled spacecraft launches based on mouse inpu</li>
+  <li>User-controlled spacecraft launches based on mouse input</li>
   <li>Visual representation of the planet, spacecraft, and trajectory lines during launch</li>
   <li>Objects disappear upon reaching the screen boundaries or colliding with the planet</li>
 </ul>
